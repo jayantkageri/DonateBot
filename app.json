@@ -1,0 +1,43 @@
+{
+  "name": "Donate Bot",
+  "description": "A Telegram Bot to tell How to Donate you :)",
+  "keywords": [
+    "telegram",
+    "donatation",
+    "telegram-bot",
+    "productivity"
+  ],
+  "repository": "https://github.com/jayantkageri/DonateBot",
+  "website": "http://jayantkageri.ml",
+  "success_url": "http://jayantkageri.ml",
+    "BOT_TOKEN": {
+      "description": "Your Bot Token.",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
+    },
+    "DONATE_TEXT": {
+      "description": "A text to tell How to Donate you",
+      "value": ""
+    }
+
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+ ],
+"addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ]
+}
