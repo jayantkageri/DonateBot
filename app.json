@@ -10,10 +10,14 @@
   "repository": "https://github.com/jayantkageri/DonateBot",
   "website": "http://jayantkageri.ml",
   "success_url": "http://jayantkageri.ml",
-    "BOT_TOKEN": {
+    "TOKEN": {
       "description": "Your Bot Token.",
       "value": ""
     },
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable heroku.",
+      "value": "ANYTHING"
     "APP_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
       "value": ""
