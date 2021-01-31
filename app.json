@@ -18,7 +18,8 @@
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
       "value": "ANYTHING"
-    "APP_ID": {
+
+    "API_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
       "value": ""
     },
