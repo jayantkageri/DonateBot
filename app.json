@@ -1,37 +1,40 @@
 {
   "name": "Donate Bot",
-  "description": "A Telegram Bot to tell How to Donate you :)",
+  "description": "Simple Telegram Bot to tell How to Donate you",
   "keywords": [
     "telegram",
-    "donatation",
+    "donate",
+    "plugin",
     "telegram-bot",
-    "productivity"
+    "productivity",
+    "jayantkageri"
   ],
   "repository": "https://github.com/jayantkageri/DonateBot",
-  "website": "http://jayantkageri.ml",
-  "success_url": "http://jayantkageri.ml",
-    "TOKEN": {
-      "description": "Your Bot Token.",
-      "value": ""
-    },
+  "website": "jayantkageri.ml",
+  "success_url": "jayantkageri.ml",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
       "value": "ANYTHING"
-
+    },
+    "TOKEN": {
+      "description": "Your Bot Token.",
+      "value": ""
+    },
     "API_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
       "value": ""
     },
+    "DONATE_TEXT": {
+      "description": "Your Donation Text, Format Markdown",
+      "value": "",
+      "required": false
+    },
     "API_HASH": {
       "description": "Get this value from my.telegram.org! Please do not steal",
       "value": ""
-    },
-    "DONATE_TEXT": {
-      "description": "A text to tell How to Donate you",
-      "value": ""
     }
-
+  },
   "buildpacks": [
     {
       "url": "heroku/python"
