@@ -1,5 +1,7 @@
-# DonateBot
-## An Simple Telegram Bot to tell How to Donate you :)
+<h1 align="center"><b>Donate Bot</b></h1>
+<h4 align="center">A Telegram Bot to tell How to Donate you</h4>
+
+
 ### Demo [@DonateUsRoBot](https://t.me/DonateUsRobot)
 
 # Deploy
