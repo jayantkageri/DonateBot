@@ -1,6 +1,6 @@
 # DonateBot
 ## An Simple Telegram Bot to tell How to Donate you :)
-## Demo [@DonateUsRoBot](https://t.me/DonateUsRobot)
+### Demo [@DonateUsRoBot](https://t.me/DonateUsRobot)
 
 # Deploy
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jayantkageri/DonateBot)
