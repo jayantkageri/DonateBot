@@ -1,4 +1,5 @@
 # <! Functions >
+import os
 from telethon import TelegramClient, events, functions, Button
 from telethon.tl.functions.users import GetFullUserRequest
 
