@@ -30,8 +30,8 @@ bot = TelegramClient("bot", api_id=APP_ID, api_hash=APP_HASH)
 MainBot = bot.start(bot_token=TOKEN)
 
 @MainBot.on(events.NewMessage(pattern="^ ?(.*)"))
-async def donateme(event):
-    await event.reply(DONATE_TEXT)
+async def _(event):
+    await MainBot.send_message(event.chat_id, DONATE_TEXT)
 
 def startbot():
     MainBot.run_until_disconnected()
