@@ -20,7 +20,7 @@
 import os
 from telethon import TelegramClient, events, functions, Button
 from telethon.tl.functions.users import GetFullUserRequest
-APP_ID = int(os.environ.get(API_ID))
+APP_ID = int(os.environ.get('API_ID'))
 APP_HASH = os.environ.get('API_HASH')
 TOKEN = os.environ.get('TOKEN')
 OWNER_ID = int(os.environ.get('OWNER_ID'))
