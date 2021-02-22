@@ -33,6 +33,10 @@
     "API_HASH": {
       "description": "Get this value from my.telegram.org! Please do not steal",
       "value": ""
+    },
+    "OWNER_ID": {
+      "description": "Your ID ! Get it from @MissRose_bot and send /info",
+      "value": ""
     }
   },
   "buildpacks": [
