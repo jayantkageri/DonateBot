@@ -35,7 +35,7 @@ async def _(event):
     await MainBot.send_message(event.chat_id, DONATE_TEXT)
 
 @MainBot.on(events.NewMessage(pattern="^ ?(.*)"))
-async def donateme(event):
+async def _(event):
     incoming = event.raw_text
     who = event.sender_id
     if incoming.startswith("/"):
