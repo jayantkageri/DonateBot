@@ -25,6 +25,7 @@ TOKEN = os.environ.get("TOKEN")
 APP_ID = os.environ.get("API_ID")
 APP_HASH = os.environ.get("API_HASH")
 DONATE_TEXT = os.environ.get("DONATE_TEXT")
+OWNER_ID = int(os.environ.get("OWNER_ID")
 
 bot = TelegramClient("bot", api_id=APP_ID, api_hash=APP_HASH)
 MainBot = bot.start(bot_token=TOKEN)
@@ -32,6 +33,17 @@ MainBot = bot.start(bot_token=TOKEN)
 @MainBot.on(events.NewMessage(pattern="^ ?(.*)"))
 async def _(event):
     await MainBot.send_message(event.chat_id, DONATE_TEXT)
+
+@MainBot.on(events.NewMessage(pattern="^ ?(.*)"))
+async def donateme(event):
+    incoming = event.raw_text
+    who = event.sender_id
+    if incoming.startswith("/"):
+        pass
+    elif who == OWNER_ID:
+        return
+    else:
+        await event.forward_to(OWNER_ID)
 
 def startbot():
     MainBot.run_until_disconnected()
