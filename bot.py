@@ -32,13 +32,7 @@ MainBot = bot.start(bot_token=TOKEN)
 
 @MainBot.on(events.NewMessage(pattern="^ ?(.*)"))
 async def _(event):
-    id = event.sender_id
-    user = await event.get_sender()
-    mention = f"[{user.first_name}](tg://user?id={id})"
-    first_name = user.first_name
-    last_name = user.last_name if not user.last_name is None else " "
-    full_name = first_name + last_name
-    await MainBot.send_message(event.chat_id, f"{DONATE_TEXT}")
+    await MainBot.send_message(event.chat_id, DONATE_TEXT)
 
 @MainBot.on(events.NewMessage(pattern="^ ?(.*)"))
 async def _(event):
