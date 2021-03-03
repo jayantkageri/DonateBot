@@ -7,16 +7,6 @@
 # Deploy
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jayantkageri/DonateBot)
 
-## Markdown Help
-
-```
-{id} - Sender ID
-{mention} - Mentions the User who sent command
-{first_name} - First Name of Sender
-{last_name} - Last Name of Sender
-{full_name} - Full Name of Sender
-```
-
 # License, Copyright, Credits
 ```
     Donate Bot, A Simple Telegram Bot to tell How to Donate you
