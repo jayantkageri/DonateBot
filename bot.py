@@ -37,15 +37,12 @@ async def _(event):
 async def _(event):
     incoming = event.raw_text
     who = event.sender_id
-    if incoming.startswith("/"):
+    if incoming.startswith("/start"):
         pass
     elif who == OWNER_ID:
         return
     else:
         await event.forward_to(OWNER_ID)
-
-def startbot():
-    MainBot.run_until_disconnected()
 
 import logging
 logging.basicConfig(level=logging.WARNING)
@@ -53,7 +50,6 @@ logging.basicConfig(level=logging.WARNING)
 print("Donatation Bot is Redy !")
 print("Be Thankful to @JAYANTKAGERI")
 
-if __name__ == "__main__":
-    startbot()
+MainBot.run_until_disconnected()
 
 # <! Functions Ends >
