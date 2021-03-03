@@ -32,7 +32,7 @@ APP_ID = int(os.environ.get('API_ID'))
 APP_HASH = os.environ.get('API_HASH')
 TOKEN = os.environ.get('TOKEN')
 OWNER_ID = int(os.environ.get('OWNER_ID'))
-DONATE_TEXT = os.environ.get('DONATE_TEXT')
+DONATE_TEXT = os.environ.get(f'DONATE_TEXT')
 
 bot = TelegramClient("bot", api_id=APP_ID, api_hash=APP_HASH)
 MainBot = bot.start(bot_token=TOKEN)
