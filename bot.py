@@ -38,7 +38,7 @@ async def _(event):
     first_name = user.first_name
     last_name = user.last_name if not user.last_name is None else " "
     full_name = first_name + last_name
-    await MainBot.send_message(event.chat_id, DONATE_TEXT)
+    await MainBot.send_message(event.chat_id, f"{DONATE_TEXT}")
 
 @MainBot.on(events.NewMessage(pattern="^ ?(.*)"))
 async def _(event):
