@@ -20,14 +20,15 @@
 import os
 from telethon import TelegramClient, events, functions, Button
 from telethon.tl.functions.users import GetFullUserRequest
+from . import *
 
-APP_ID = int(os.environ.get('API_ID'))
-APP_HASH = os.environ.get('API_HASH')
-TOKEN = os.environ.get('TOKEN')
-OWNER_ID = int(os.environ.get('OWNER_ID'))
-DONATE_TEXT = os.environ.get(f'DONATE_TEXT')
+API_ID = Var.API_ID
+API_HASH = Var.API_HASH
+TOKEN = Var.TOKEN
+OWNER_ID = Var.OWNER_ID
+DONATE_TEXT = Var.DONATE_TEXT
 
-bot = TelegramClient("bot", api_id=APP_ID, api_hash=APP_HASH)
+bot = TelegramClient("bot", api_id=API_ID, api_hash=API_HASH)
 MainBot = bot.start(bot_token=TOKEN)
 
 @MainBot.on(events.NewMessage(pattern="^ ?(.*)"))
