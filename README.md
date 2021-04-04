@@ -16,6 +16,8 @@ Edit the [Var.py](https://github.com/jayantkageri/DonateBot/blob/main/Var.py)  w
 - `OWNER_ID` - Your Telegram ID, Get it from [@MissRose_bot](https://t.me/MissRose_bot)
 - `DONATE_TEXT` - Your Donate Text or Message to be repeated, Basic Telegram Markdowns apply. For Markdown Help [click here](https://github.com/jayantkageri/DonateBot#markdown)
 
+- Run the Bot by `python3 -m bot`
+
 ### Markdown
 ```
 - To make your Text Bold use **Your Text**
