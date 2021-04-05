@@ -31,7 +31,7 @@ if ENV:
 else:
   class Var(object):
     API_ID = int("Put you API_ID here (in the String)")
-    API_HASH = "Put your API_HASH here (in the String)
+    API_HASH = "Put your API_HASH here (in the String)"
     TOKEN = "Put your Bot Token here (in the String)"
     OWNER_ID = int("Put your Telegram ID here (in the String)")
     DONATE_TEXT = "Put your Donat Text/Message to be repeated here (in the String)"
