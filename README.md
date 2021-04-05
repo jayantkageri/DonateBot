@@ -2,9 +2,9 @@
 <h4 align="center">A Telegram Bot to tell How to Donate you</h4>
 
 
-### Demo [@DonateUsRoBot](https://t.me/DonateUsRobot)
+#### Demo [@DonateUsRoBot](https://t.me/DonateUsRobot)
 
-## Help
+# Help
 
 ### Deploy to Heroku :
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jayantkageri/DonateBot)
