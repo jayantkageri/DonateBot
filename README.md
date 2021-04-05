@@ -14,7 +14,7 @@
 - Edit the [Var.py](https://github.com/jayantkageri/DonateBot/blob/main/Var.py)  with your Own Values
 - `API_ID` and `API_HASH` - Get API_ID and API_HASH from https://my.telegram.org
 - `TOKEN` - Bot Token given by the [@BotFather](https://t.me/BotFather)
-- `OWNER_ID` - Your Telegram ID, Get it from [@MissRose_bot](https://t.me/MissRose_bot)
+- `OWNER_ID` - Your Telegram ID, Get it from [@MissRose_bot](https://t.me/MissRose_bot) by sending `/start` and `/info`
 - `DONATE_TEXT` - Your Donate Text or Message to be repeated, Basic Telegram Markdowns apply. For Markdown Help [click here](https://github.com/jayantkageri/DonateBot#markdown)
 
 #### Running
