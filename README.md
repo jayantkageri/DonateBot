@@ -20,9 +20,10 @@ Edit the [Var.py](https://github.com/jayantkageri/DonateBot/blob/main/Var.py)  w
 
 ### Markdown
 ```
-- To make your Text Bold use **Your Text**
+- To make your Text Bold use **Your Text Here**
 - To make your Text Italic use __Your Text Here__
 - To make your Text Mono use `Your Text Here`
+- To make your Text Strikethrough use ~~Your Text Here~~ 
 ```
 # License, Copyright, Credits
 ```
