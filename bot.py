@@ -28,14 +28,14 @@ TOKEN = Var.TOKEN
 OWNER_ID = Var.OWNER_ID
 DONATE_TEXT = Var.DONATE_TEXT
 
-bot = TelegramClient("bot", api_id=API_ID, api_hash=API_HASH)
-MainBot = bot.start(bot_token=TOKEN)
+bot = TelegramClient("telegram_client", api_id=API_ID, api_hash=API_HASH)
+telegram = bot.start(bot_token=TOKEN)
 
-@MainBot.on(events.NewMessage(pattern="^ ?(.*)"))
+@telegram.on(events.NewMessage(pattern="^ ?(.*)"))
 async def _(event):
-    await MainBot.send_message(event.chat_id, DONATE_TEXT)
+    await telegram.send_message(event.chat_id, DONATE_TEXT)
 
-@MainBot.on(events.NewMessage(pattern="^ ?(.*)"))
+@telegram.on(events.NewMessage(pattern="^ ?(.*)"))
 async def _(event):
     incoming = event.raw_text
     who = event.sender_id
@@ -52,6 +52,6 @@ logging.basicConfig(level=logging.WARNING)
 print("Donatation Bot is Redy !")
 print("Be Thankful to @JAYANTKAGERI")
 
-MainBot.run_until_disconnected()
+telegram.run_until_disconnected()
 
 # <! Functions Ends >
