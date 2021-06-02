@@ -28,8 +28,7 @@ TOKEN = Var.TOKEN
 OWNER_ID = Var.OWNER_ID
 DONATE_TEXT = Var.DONATE_TEXT
 
-bot = TelegramClient("telegram_client", api_id=API_ID, api_hash=API_HASH)
-telegram = bot.start(bot_token=TOKEN)
+telegram = TelegramClient("telegram_client", api_id=API_ID, api_hash=API_HASH).start(bot_token=TOKEN)
 
 @telegram.on(events.NewMessage(pattern="^ ?(.*)"))
 async def _(event):
