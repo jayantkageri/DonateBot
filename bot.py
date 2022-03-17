@@ -32,10 +32,10 @@ telegram = TelegramClient("telegram_client", api_id=API_ID, api_hash=API_HASH).s
 
 @telegram.on(events.NewMessage(pattern="^ ?(.*)"))
 async def _(event):
+    # Send Donate Message
     await telegram.send_message(event.chat_id, DONATE_TEXT)
 
-@telegram.on(events.NewMessage(pattern="^ ?(.*)"))
-async def _(event):
+    # Forword Message to the Owner
     incoming = event.raw_text
     who = event.sender_id
     if incoming.startswith("/start"):
