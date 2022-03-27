@@ -20,7 +20,7 @@
 import os
 from telethon import TelegramClient, events, functions, Button
 from telethon.tl.functions.users import GetFullUserRequest
-from . import *
+from .Var import *
 
 API_ID = Var.API_ID
 API_HASH = Var.API_HASH
