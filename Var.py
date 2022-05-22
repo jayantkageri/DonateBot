@@ -18,18 +18,17 @@ import os
 
 ENV = os.environ.get("ENV")
 
-# For Hosing in Heroku, Add your Enviroments in Heroku App Settings
-if ENV:
-  class Var(object):
+
+
+class Var(object):
+  if ENV:
     API_ID = int(os.environ.get('API_ID'))
     APP_HASH = os.environ.get('API_HASH')
     TOKEN = os.environ.get('TOKEN')
     OWNER_ID = int(os.environ.get('OWNER_ID'))
-    DONATE_TEXT = os.environ.get(f'DONATE_TEXT')
+    DONATE_TEXT = os.environ.get('DONATE_TEXT')
 
-# For Local Hosing only, Add your Enviroments in the String
-else:
-  class Var(object):
+  else:
     API_ID = int("Put you API_ID here (in the String)")
     API_HASH = "Put your API_HASH here (in the String)"
     TOKEN = "Put your Bot Token here (in the String)"
